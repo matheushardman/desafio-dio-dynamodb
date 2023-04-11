@@ -2,11 +2,11 @@
 
 Repositório designado para o desafio de projeto do módulo "Trabalhando com Banco de Dados SQL e NoSQL" do Bootcamp Banco PAN JAVA Developer
 
-Durante o desafio, encontrei dificuldades para aplicar os comandos de pesquisa (query) no banco de dados utilizando o Windows, pois durante a explicação o professor utiliza o Linux.
+Durante o desafio, encontrei dificuldades para aplicar os comandos de pesquisa (query) no banco de dados utilizando o CLI no Windows (durante a explicação do projeto utilizou-se o Linux).
 
-No Windows, na definição da query após a --expression-atribute-values o Windows (PowerShell) não entende o termo (Exemplo: --expression-atribute-values '{":artist":{"S":"Iron Maiden"}}').
+No Windows, na etapa de definição da query após a --expression-atribute-values o Windows (PowerShell) não entende os atributos passados para busca ( Exemplo: --expression-atribute-values '{":artist":{"S":"Iron Maiden"}}' ).
 
-Para resolver criei documentos json temporários (podem ser visualizados na pasta src) com a atribuição de valor e ajustei o comando de query modificando o final para ler esses arquivos --expression-atribute-values file://tempartist.json
+Para resolver criei documentos json que podem ser excluidos após a execução da query (podem ser visualizados na pasta src), ajustei o comando de query modificando o final para ler esses arquivos --expression-atribute-values file://tempartist.json (Por exemplo)
 
 ### Serviço utilizado
 
